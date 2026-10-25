@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "repository": "hyscodebase/Data-Structure-Algorithm",
+  "namespace": "curated-chat",
+  "repository_visibility_verified": "private",
+  "created_date": "2026-10-25",
+  "source_policy": "Independently rewritten explanations and examples only; no full chats, instructor documents, exam questions, submitted assignments, personal grading records, or original datasets.",
+  "base_commit": "23f4619530cd4da30c937d5da698cc1c51cf2b15",
+  "sources": [
+    {
+      "source_id": "chatgpt:6ac32004-6964-83ee-ab27-cc318e4bb112:775c8351-6d33-4de6-9502-4b7ea3739329",
+      "conversation_id": "6ac32004-6964-83ee-ab27-cc318e4bb112",
+      "message_id": "775c8351-6d33-4de6-9502-4b7ea3739329",
+      "url": "https://chatgpt.com/c/6ac32004-6964-83ee-ab27-cc318e4bb112?messageId=775c8351-6d33-4de6-9502-4b7ea3739329",
+      "access_note": "Private owner conversation; other repository readers may not be able to open this link.",
+      "use": "Concept reference only; wording, data examples, implementation presentation, and tests were newly written."
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "curated-chat/binary-search-boundaries.md",
+      "content_sha256": "9228280010f6fa09e9a574ebfb16acd784aff3fbe7bf31326984c196b3a417f0",
+      "encoding": "utf-8",
+      "newline": "LF",
+      "kind": "independent-study-note"
+    },
+    {
+      "path": "curated-chat/README.md",
+      "content_sha256": "27d65ec7a83e34facfb86e6be60b918590a7d3cce6d9910d15b61479aa4272f0",
+      "encoding": "utf-8",
+      "newline": "LF",
+      "kind": "index-or-change-record"
+    },
+    {
+      "path": "curated-chat/CHANGELOG.md",
+      "content_sha256": "ac2c2b6ec11d2995f14f52471387b3e1c5f2476c5cfa19c0217fd561428964a1",
+      "encoding": "utf-8",
+      "newline": "LF",
+      "kind": "index-or-change-record"
+    }
+  ],
+  "validation": {
+    "runtime": "Python 3.12.14",
+    "date": "2026-10-25",
+    "method": "Executed the Python code block extracted from the exact Markdown content.",
+    "result": "passed",
+    "exit_code": 0,
+    "exact_index_cases": 9,
+    "duplicate_validity_cases": 1,
+    "total_cases": 10,
+    "scope": "Empty input, singleton present/absent, first/last/interior hits, missing gap, below/above range, duplicate validity.",
+    "limitations": "Focused example validation only. No claim of exhaustive inputs, benchmark results, or testing the existing C repository."
+  },
+  "integrity_note": "Hashes cover the three UTF-8 Markdown files in artifacts. This manifest is not self-hashed."
+}
