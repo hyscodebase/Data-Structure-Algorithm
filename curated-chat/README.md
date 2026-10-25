@@ -7,6 +7,7 @@
 | 문서 | 내용 | 검증 |
 | --- | --- | --- |
 | [이진탐색 경계 점검](binary-search-boundaries.md) | 포함 구간, 종료 조건, 중복값 계약, 경계 입력 | Python 예제 10개 검사 통과 |
+| [BST 중복값과 불변식](bst-duplicate-invariants.md) | 중복 정책, 조상 경계, 삽입·검증 | Python 검증 10개 통과 |
 
 ## 기록과 재현
 

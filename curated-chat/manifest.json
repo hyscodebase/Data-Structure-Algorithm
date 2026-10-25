@@ -13,7 +13,17 @@
       "message_id": "775c8351-6d33-4de6-9502-4b7ea3739329",
       "url": "https://chatgpt.com/c/6ac32004-6964-83ee-ab27-cc318e4bb112?messageId=775c8351-6d33-4de6-9502-4b7ea3739329",
       "access_note": "Private owner conversation; other repository readers may not be able to open this link.",
-      "use": "Concept reference only; wording, data examples, implementation presentation, and tests were newly written."
+      "use": "Concept reference only; wording, data examples, implementation presentation, and tests were newly written.",
+      "source_version": {
+        "created_at": "2026-10-05T06:51:44.096945Z",
+        "updated_at": "2026-10-05T07:06:33.102034Z",
+        "read_range_characters": [
+          0,
+          8783
+        ],
+        "full_message_characters": 21943,
+        "read_scope": "Actual BST section read; remainder of source message not read in this run."
+      }
     }
   ],
   "artifacts": [
@@ -26,17 +36,36 @@
     },
     {
       "path": "curated-chat/README.md",
-      "content_sha256": "27d65ec7a83e34facfb86e6be60b918590a7d3cce6d9910d15b61479aa4272f0",
+      "content_sha256": "0550b09ea47a072ed2105a5bd9506b55650274f6cc13742342f3bdc45f1bd5a4",
       "encoding": "utf-8",
       "newline": "LF",
       "kind": "index-or-change-record"
     },
     {
       "path": "curated-chat/CHANGELOG.md",
-      "content_sha256": "ac2c2b6ec11d2995f14f52471387b3e1c5f2476c5cfa19c0217fd561428964a1",
+      "content_sha256": "780e82ad6bc4742de195567584fcc65704dc0af3cb6dc2d8c920fcbc379e3cb4",
       "encoding": "utf-8",
       "newline": "LF",
       "kind": "index-or-change-record"
+    },
+    {
+      "path": "curated-chat/bst-duplicate-invariants.md",
+      "content_sha256": "11f62c75d8be327940af01a0a6449690ca8a3483b0b15d7ee303d24afbf705e7",
+      "encoding": "utf-8",
+      "newline": "LF",
+      "kind": "independent-study-note",
+      "source_ids": [
+        "chatgpt:6ac32004-6964-83ee-ab27-cc318e4bb112:775c8351-6d33-4de6-9502-4b7ea3739329"
+      ],
+      "validation": {
+        "runtime": "Python 3.12.14",
+        "date": "2026-10-25",
+        "method": "Executed Python block from exact proposed UTF-8 Markdown string.",
+        "result": "passed",
+        "total_cases": 10,
+        "scope": "7 construction cases, 2 invalid trees, 1 duplicate path",
+        "limitations": "Focused example only, no existing C repository tests or app CI."
+      }
     }
   ],
   "validation": {
@@ -51,5 +80,20 @@
     "scope": "Empty input, singleton present/absent, first/last/interior hits, missing gap, below/above range, duplicate validity.",
     "limitations": "Focused example validation only. No claim of exhaustive inputs, benchmark results, or testing the existing C repository."
   },
-  "integrity_note": "Hashes cover the three UTF-8 Markdown files in artifacts. This manifest is not self-hashed."
+  "integrity_note": "Hashes cover each UTF-8 artifact. The manifest is not self-hashed. Top-level validation describes the original binary-search note; subsequent artifacts carry their own validation.",
+  "updated_at": "2026-10-25T23:19:00Z",
+  "last_base_commit": "88a11177021b0b34e619db05ef61d5b9279768fd",
+  "search_coverage": {
+    "run_scheduled_for": "2026-10-25T23:00:00Z",
+    "queries": [
+      "스택 큐",
+      "BST"
+    ],
+    "distinct_queries": 2,
+    "result_hits": 13,
+    "partial_results": false,
+    "unavailable_sources": [],
+    "selected_conversations_read": 2,
+    "notes": "Search metadata is not full transcript reading. Read actual source BST section (0..8783 of 21943 characters) and latest message in a newer October 21 study conversation. Search hits did not establish changes newer than previous October 25 curation. Processed older BST backlog; existing binary-search note retained. Keyword search can miss other conversations, modified content, attachments and inaccessible material; no exhaustive account claim."
+  }
 }
