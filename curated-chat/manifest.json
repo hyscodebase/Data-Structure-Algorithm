@@ -22,7 +22,7 @@
           8783
         ],
         "full_message_characters": 21943,
-        "read_scope": "Actual BST section read; remainder of source message not read in this run."
+        "read_scope": "Actual first 8783 characters read, including stack/queue and BST sections. Remainder not read in this run."
       }
     }
   ],
@@ -36,14 +36,14 @@
     },
     {
       "path": "curated-chat/README.md",
-      "content_sha256": "0550b09ea47a072ed2105a5bd9506b55650274f6cc13742342f3bdc45f1bd5a4",
+      "content_sha256": "490018019e02e19ddb1623f707c2631e43d2414559b93e42c1f44ce50c694949",
       "encoding": "utf-8",
       "newline": "LF",
       "kind": "index-or-change-record"
     },
     {
       "path": "curated-chat/CHANGELOG.md",
-      "content_sha256": "780e82ad6bc4742de195567584fcc65704dc0af3cb6dc2d8c920fcbc379e3cb4",
+      "content_sha256": "a21dc5d3c3f648d9e4a79d3f096fcd05eaf3b34709c3419ef759d2fdd7f43b17",
       "encoding": "utf-8",
       "newline": "LF",
       "kind": "index-or-change-record"
@@ -66,6 +66,25 @@
         "scope": "7 construction cases, 2 invalid trees, 1 duplicate path",
         "limitations": "Focused example only, no existing C repository tests or app CI."
       }
+    },
+    {
+      "path": "curated-chat/stack-queue-state.md",
+      "encoding": "utf-8",
+      "newline": "LF",
+      "kind": "independent-study-note",
+      "source_ids": [
+        "chatgpt:6ac32004-6964-83ee-ab27-cc318e4bb112:775c8351-6d33-4de6-9502-4b7ea3739329"
+      ],
+      "validation": {
+        "runtime": "Python 3.12.14",
+        "date": "2026-10-27",
+        "method": "Execute Python block extracted from exact proposed Markdown",
+        "result": "passed",
+        "total_cases": 8,
+        "scope": "5 input cases with LIFO/FIFO/input-preservation assertions; 1 interleaving scenario; 2 empty-removal exceptions",
+        "limitations": "Focused example only, no C repository-wide tests or CI"
+      },
+      "content_sha256": "9a3c005dd0f945e48219c9f18d149afb817916ee65b8e815f58906ed9ad3641e"
     }
   ],
   "validation": {
@@ -81,19 +100,34 @@
     "limitations": "Focused example validation only. No claim of exhaustive inputs, benchmark results, or testing the existing C repository."
   },
   "integrity_note": "Hashes cover each UTF-8 artifact. The manifest is not self-hashed. Top-level validation describes the original binary-search note; subsequent artifacts carry their own validation.",
-  "updated_at": "2026-10-25T23:19:00Z",
-  "last_base_commit": "88a11177021b0b34e619db05ef61d5b9279768fd",
+  "updated_at": "2026-10-27T23:39:00Z",
+  "last_base_commit": "8fa9b1b8d98a3d523583c5bb8aff151179c87cde",
   "search_coverage": {
-    "run_scheduled_for": "2026-10-25T23:00:00Z",
+    "run_scheduled_for": "2026-10-27T23:00:00Z",
     "queries": [
-      "스택 큐",
-      "BST"
+      "비트연산",
+      "문자열 오류",
+      "인공지능문제해결",
+      "비트 연산"
     ],
-    "distinct_queries": 2,
-    "result_hits": 13,
-    "partial_results": false,
-    "unavailable_sources": [],
+    "distinct_queries": 4,
+    "result_pages": 4,
     "selected_conversations_read": 2,
-    "notes": "Search metadata is not full transcript reading. Read actual source BST section (0..8783 of 21943 characters) and latest message in a newer October 21 study conversation. Search hits did not establish changes newer than previous October 25 curation. Processed older BST backlog; existing binary-search note retained. Keyword search can miss other conversations, modified content, attachments and inaccessible material; no exhaustive account claim."
-  }
+    "notes": "Keyword results are not full transcript reads. Actual algorithm message 0..8783 of 21943 characters includes stack/queue section; same historical source version. String-debugging user symptom read but assistant content_omitted=true; not curated. Broad string-error query has unprocessed next_cursor. Other keywords can miss changed conversations; no full account or attachment scan. No newly modified source confirmed; processed older unhandled concept. c-programming-study-2026 current README checked for overlap; no course/exam/assignment text copied."
+  },
+  "search_history": [
+    {
+      "run_scheduled_for": "2026-10-25T23:00:00Z",
+      "queries": [
+        "스택 큐",
+        "BST"
+      ],
+      "distinct_queries": 2,
+      "result_hits": 13,
+      "partial_results": false,
+      "unavailable_sources": [],
+      "selected_conversations_read": 2,
+      "notes": "Search metadata is not full transcript reading. Read actual source BST section (0..8783 of 21943 characters) and latest message in a newer October 21 study conversation. Search hits did not establish changes newer than previous October 25 curation. Processed older BST backlog; existing binary-search note retained. Keyword search can miss other conversations, modified content, attachments and inaccessible material; no exhaustive account claim."
+    }
+  ]
 }

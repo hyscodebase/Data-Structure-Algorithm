@@ -8,6 +8,7 @@
 | --- | --- | --- |
 | [이진탐색 경계 점검](binary-search-boundaries.md) | 포함 구간, 종료 조건, 중복값 계약, 경계 입력 | Python 예제 10개 검사 통과 |
 | [BST 중복값과 불변식](bst-duplicate-invariants.md) | 중복 정책, 조상 경계, 삽입·검증 | Python 검증 10개 통과 |
+| [스택·큐 상태 추적](stack-queue-state.md) | 반환값·잔여 상태·빈 제거·입력 보존 | Python 8개 시나리오 통과 |
 
 ## 기록과 재현
 
