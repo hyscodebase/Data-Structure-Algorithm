@@ -10,6 +10,8 @@
 | [BST 중복값과 불변식](bst-duplicate-invariants.md) | 중복 정책, 조상 경계, 삽입·검증 | Python 검증 10개 통과 |
 | [스택·큐 상태 추적](stack-queue-state.md) | 반환값·잔여 상태·빈 제거·입력 보존 | Python 8개 시나리오 통과 |
 
+| [해시 충돌과 키 동등성](hash-collision-key-equality.md) | 충돌·같은 키 갱신·삭제·불변 키 계약 | Python 8개 검사 통과 |
+
 ## 기록과 재현
 
 - 각 문서의 코드 블록을 명시된 실행 환경에서 실행한다.
