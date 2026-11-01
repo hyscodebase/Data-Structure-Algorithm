@@ -12,6 +12,8 @@
 
 | [해시 충돌과 키 동등성](hash-collision-key-equality.md) | 충돌·같은 키 갱신·삭제·불변 키 계약 | Python 8개 검사 통과 |
 
+| [버블 정렬 순회 불변식](bubble-sort-pass-invariants.md) | 확정 접미구간·안정성·조기 종료·추적 비용 | Python 10개 사례 통과 |
+
 ## 기록과 재현
 
 - 각 문서의 코드 블록을 명시된 실행 환경에서 실행한다.

@@ -36,6 +36,18 @@
         "read_scope": "Full 594-character assistant body and preceding direct user question read; content_omitted=false."
       },
       "use": "Concept reference only; independently authored prose and synthetic collision experiment. Source identifier example excluded."
+    },
+    {
+      "source_id": "chatgpt:6aab7fe3-b918-83ee-8b6b-bbb817336abf:61644134-9ebb-4d90-8e42-90e5264139d1",
+      "conversation_id": "6aab7fe3-b918-83ee-8b6b-bbb817336abf",
+      "message_id": "61644134-9ebb-4d90-8e42-90e5264139d1",
+      "url": "https://chatgpt.com/c/6aab7fe3-b918-83ee-8b6b-bbb817336abf?messageId=61644134-9ebb-4d90-8e42-90e5264139d1",
+      "source_version": {
+        "created_at": "2026-09-17T05:51:47.552058Z",
+        "updated_at": "2026-09-17T05:52:09.621571Z",
+        "read_scope": "Full assistant explanation 0..3938 read. User image content omitted; no image recovery."
+      },
+      "use": "General concept only. Original image/code/exam wording excluded; independently rewritten trace implementation and new synthetic inputs."
     }
   ],
   "artifacts": [
@@ -48,14 +60,14 @@
     },
     {
       "path": "curated-chat/README.md",
-      "content_sha256": "9addcdea98431d6ddd145cf6f1d334e1de59e86a784ce3ef76b85dcbfecbf60a",
+      "content_sha256": "0f4c9bc2394455b3d069c9c69965ed95ecb4af96a90880c1bf3c5256ce2b9112",
       "encoding": "utf-8",
       "newline": "LF",
       "kind": "index-or-change-record"
     },
     {
       "path": "curated-chat/CHANGELOG.md",
-      "content_sha256": "39712e18c32a639226e742749f95d082d70325556aee5f7c78a15f04c1856c8d",
+      "content_sha256": "02d544c8c18f70f9772fdd3f61e3a577abbf4ab51253ab4b9a7879e88a8bf186",
       "encoding": "utf-8",
       "newline": "LF",
       "kind": "index-or-change-record"
@@ -116,6 +128,25 @@
         "limitations": "Synthetic example only; not benchmark, C repository tests or full CI"
       },
       "content_sha256": "5d8e28980404fdf0ccd4e0c496a9b0b08ce5b8c9d77120c732cf7ab5dd38413e"
+    },
+    {
+      "path": "curated-chat/bubble-sort-pass-invariants.md",
+      "encoding": "utf-8",
+      "newline": "LF",
+      "kind": "independent-study-note",
+      "source_ids": [
+        "chatgpt:6aab7fe3-b918-83ee-8b6b-bbb817336abf:61644134-9ebb-4d90-8e42-90e5264139d1"
+      ],
+      "validation": {
+        "runtime": "3.12.14",
+        "date": "2026-11-01",
+        "method": "Execute exact Markdown Python block",
+        "result": "passed",
+        "total_cases": 10,
+        "scope": "7 input/invariant cases plus stability, early exit and snapshot independence",
+        "limitations": "No original image reconstruction, full C repository execution or benchmark"
+      },
+      "content_sha256": "93ec2a50208281955cf374c6ec8e31143c26a0da73022e27cb6ee2fa176d5f93"
     }
   ],
   "validation": {
@@ -131,21 +162,21 @@
     "limitations": "Focused example validation only. No claim of exhaustive inputs, benchmark results, or testing the existing C repository."
   },
   "integrity_note": "Hashes cover each UTF-8 artifact. The manifest is not self-hashed. Top-level validation describes the original binary-search note; subsequent artifacts carry their own validation.",
-  "updated_at": "2026-10-30T23:23:00Z",
-  "last_base_commit": "996fbcd3d12d7630369a8ed9eacd81b5e5eb6c40",
+  "updated_at": "2026-11-01T23:24:00Z",
+  "last_base_commit": "5c9dcd6d3d20a0b19c6fab8b5a577cfcbc9ae404",
   "search_coverage": {
-    "run_scheduled_for": "2026-10-30T23:00:00Z",
+    "run_scheduled_for": "2026-11-01T23:00:00Z",
     "queries": [
-      "포인터",
       "Python",
-      "문자열 오류",
-      "재귀",
-      "딕셔너리"
+      "정렬",
+      "IntentLock",
+      "AIX",
+      "얕은 복사"
     ],
     "distinct_queries": 5,
     "result_pages_requested": 5,
-    "selected_conversations_read": 3,
-    "notes": "Bounded first-page keyword searches, not exhaustive chronological scan or full account export. Broad outputs truncated; detailed snippets only partially inspected and continuation pages not exhausted. Three actual selected conversation contexts read. Recent MIT assignment recommendation excluded; string-debug assistant body omitted and held. September independent hash Q&A selected from backlog; no new source modification established. No attachments, datasets or sandbox files recovered. Existing C-study upload checked for overlap and untouched."
+    "selected_conversations_read": 2,
+    "notes": "Bounded first pages; broad output truncated, selected metadata and actual two contexts read. No exhaustive account/chronological/attachment scan; continuations not exhausted. Latest AIX organization image is mixed organization asset, not uploaded. Older bubble explanation used only as concept reference, original omitted image and code not copied. Private C-study README checked for overlap and left untouched. No new source version confirmed. Existing public/team/health-data exclusions retained."
   },
   "search_history": [
     {
@@ -173,6 +204,20 @@
       "result_pages": 4,
       "selected_conversations_read": 2,
       "notes": "Keyword results are not full transcript reads. Actual algorithm message 0..8783 of 21943 characters includes stack/queue section; same historical source version. String-debugging user symptom read but assistant content_omitted=true; not curated. Broad string-error query has unprocessed next_cursor. Other keywords can miss changed conversations; no full account or attachment scan. No newly modified source confirmed; processed older unhandled concept. c-programming-study-2026 current README checked for overlap; no course/exam/assignment text copied."
+    },
+    {
+      "run_scheduled_for": "2026-10-30T23:00:00Z",
+      "queries": [
+        "포인터",
+        "Python",
+        "문자열 오류",
+        "재귀",
+        "딕셔너리"
+      ],
+      "distinct_queries": 5,
+      "result_pages_requested": 5,
+      "selected_conversations_read": 3,
+      "notes": "Bounded first-page keyword searches, not exhaustive chronological scan or full account export. Broad outputs truncated; detailed snippets only partially inspected and continuation pages not exhausted. Three actual selected conversation contexts read. Recent MIT assignment recommendation excluded; string-debug assistant body omitted and held. September independent hash Q&A selected from backlog; no new source modification established. No attachments, datasets or sandbox files recovered. Existing C-study upload checked for overlap and untouched."
     }
   ]
 }
