@@ -14,6 +14,8 @@
 
 | [버블 정렬 순회 불변식](bubble-sort-pass-invariants.md) | 확정 접미구간·안정성·조기 종료·추적 비용 | Python 10개 사례 통과 |
 
+| [집합의 의미와 구현 비용](set-adt-implementation-costs.md) | ADT·선형/정렬 표현·검색과 갱신 비용 구분 | Python 8개 사례 통과 |
+
 ## 기록과 재현
 
 - 각 문서의 코드 블록을 명시된 실행 환경에서 실행한다.

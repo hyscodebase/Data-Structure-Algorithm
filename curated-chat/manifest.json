@@ -48,6 +48,18 @@
         "read_scope": "Full assistant explanation 0..3938 read. User image content omitted; no image recovery."
       },
       "use": "General concept only. Original image/code/exam wording excluded; independently rewritten trace implementation and new synthetic inputs."
+    },
+    {
+      "source_id": "chatgpt:678ca26b-8a70-800e-b982-a4460bc65170:da79a0a6-60fb-4113-b576-70c812e3b86d",
+      "conversation_id": "678ca26b-8a70-800e-b982-a4460bc65170",
+      "message_id": "da79a0a6-60fb-4113-b576-70c812e3b86d",
+      "url": "https://chatgpt.com/c/678ca26b-8a70-800e-b982-a4460bc65170?messageId=da79a0a6-60fb-4113-b576-70c812e3b86d",
+      "source_version": {
+        "created_at": "2025-01-20T11:30:23.845316Z",
+        "updated_at": "2025-01-20T11:30:23.845316Z",
+        "read_scope": "Full 1702-character assistant answer and direct 171-character user question read; content_omitted=false."
+      },
+      "use": "Concept reference only; independent prose and new synthetic integer examples; no raw conversation or third-party exercise reproduction."
     }
   ],
   "artifacts": [
@@ -60,14 +72,14 @@
     },
     {
       "path": "curated-chat/README.md",
-      "content_sha256": "0f4c9bc2394455b3d069c9c69965ed95ecb4af96a90880c1bf3c5256ce2b9112",
+      "content_sha256": "26daf3fadd7ed90250b41916cf9e77506b7b570aab1d09de3dcfc2b2142381dc",
       "encoding": "utf-8",
       "newline": "LF",
       "kind": "index-or-change-record"
     },
     {
       "path": "curated-chat/CHANGELOG.md",
-      "content_sha256": "02d544c8c18f70f9772fdd3f61e3a577abbf4ab51253ab4b9a7879e88a8bf186",
+      "content_sha256": "d247729352b8a6cacb93bc11bdf35ddc588b599a75c2e4540e8058274500ed41",
       "encoding": "utf-8",
       "newline": "LF",
       "kind": "index-or-change-record"
@@ -147,6 +159,25 @@
         "limitations": "No original image reconstruction, full C repository execution or benchmark"
       },
       "content_sha256": "93ec2a50208281955cf374c6ec8e31143c26a0da73022e27cb6ee2fa176d5f93"
+    },
+    {
+      "path": "curated-chat/set-adt-implementation-costs.md",
+      "encoding": "utf-8",
+      "newline": "LF",
+      "kind": "independent-study-note",
+      "source_ids": [
+        "chatgpt:678ca26b-8a70-800e-b982-a4460bc65170:da79a0a6-60fb-4113-b576-70c812e3b86d"
+      ],
+      "validation": {
+        "runtime": "3.12.14",
+        "date": "2026-11-02",
+        "method": "Execute exact Markdown Python block",
+        "result": "passed",
+        "total_cases": 8,
+        "scope": "Semantic equivalence of linear and sorted-list set implementations: duplicates, missing deletion, reinsert, membership and order invariants",
+        "limitations": "Synthetic integer examples only; not benchmark, language implementation audit or full C repository tests"
+      },
+      "content_sha256": "dc4d7379689ac39e0ae6a459087110acae0b3ecc9ac93eae9002689536bb61ed"
     }
   ],
   "validation": {
@@ -162,21 +193,21 @@
     "limitations": "Focused example validation only. No claim of exhaustive inputs, benchmark results, or testing the existing C repository."
   },
   "integrity_note": "Hashes cover each UTF-8 artifact. The manifest is not self-hashed. Top-level validation describes the original binary-search note; subsequent artifacts carry their own validation.",
-  "updated_at": "2026-11-01T23:24:00Z",
-  "last_base_commit": "5c9dcd6d3d20a0b19c6fab8b5a577cfcbc9ae404",
+  "updated_at": "2026-11-02T23:58:00Z",
+  "last_base_commit": "8e7666e8ac769e35724da9ae045ae26594103f82",
   "search_coverage": {
-    "run_scheduled_for": "2026-11-01T23:00:00Z",
+    "run_scheduled_for": "2026-11-02T23:00:00Z",
     "queries": [
-      "Python",
-      "정렬",
-      "IntentLock",
-      "AIX",
-      "얕은 복사"
+      "선택 정렬",
+      "삽입 정렬",
+      "skillwhy",
+      "C 문자열",
+      "KNOWL"
     ],
     "distinct_queries": 5,
     "result_pages_requested": 5,
-    "selected_conversations_read": 2,
-    "notes": "Bounded first pages; broad output truncated, selected metadata and actual two contexts read. No exhaustive account/chronological/attachment scan; continuations not exhausted. Latest AIX organization image is mixed organization asset, not uploaded. Older bubble explanation used only as concept reference, original omitted image and code not copied. Private C-study README checked for overlap and left untouched. No new source version confirmed. Existing public/team/health-data exclusions retained."
+    "selected_conversations_read": 3,
+    "notes": "Bounded first-page searches; broad output initially truncated, metadata subsequently inspected. Continuations not exhausted; no exhaustive chronological/account/attachment scan. Latest GDGoC team-project guide excluded due to third-party/team provenance and omitted answer. Missing C-debug answer remains held. Old Set conceptual Q&A fully read and independently rewritten; no new source modification established. C-study README checked for overlap and untouched. No skillwhy match in this query does not establish absence; public project excluded."
   },
   "search_history": [
     {
@@ -218,6 +249,20 @@
       "result_pages_requested": 5,
       "selected_conversations_read": 3,
       "notes": "Bounded first-page keyword searches, not exhaustive chronological scan or full account export. Broad outputs truncated; detailed snippets only partially inspected and continuation pages not exhausted. Three actual selected conversation contexts read. Recent MIT assignment recommendation excluded; string-debug assistant body omitted and held. September independent hash Q&A selected from backlog; no new source modification established. No attachments, datasets or sandbox files recovered. Existing C-study upload checked for overlap and untouched."
+    },
+    {
+      "run_scheduled_for": "2026-11-01T23:00:00Z",
+      "queries": [
+        "Python",
+        "정렬",
+        "IntentLock",
+        "AIX",
+        "얕은 복사"
+      ],
+      "distinct_queries": 5,
+      "result_pages_requested": 5,
+      "selected_conversations_read": 2,
+      "notes": "Bounded first pages; broad output truncated, selected metadata and actual two contexts read. No exhaustive account/chronological/attachment scan; continuations not exhausted. Latest AIX organization image is mixed organization asset, not uploaded. Older bubble explanation used only as concept reference, original omitted image and code not copied. Private C-study README checked for overlap and left untouched. No new source version confirmed. Existing public/team/health-data exclusions retained."
     }
   ]
 }
